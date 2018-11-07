@@ -1,0 +1,3 @@
+Each of these files is a raw binary blob. Most are 32MiB in size, however a few are smaller since they take obscene amounts of time to generate otherwise.  The filenames denote the source of the random numbers for those files.
+Each of the operating systems here uses a different algorithm to generate pseudo-random numbers.
+The source within that operating system is denoted next.  "urandom" is generally not considered safe for cryptographic purposes, especially once the system runs out of entropy.  "random", especially when backed with a hardware RNG for providing entropy, is generally considered more preferable.  It is also significantly slower to generate.  Other binary sources will be named according to source.
